@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container-fluid d-flex min-vh-100 align-items-center justify-content-center">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-12">
+                    <div class="header border-bottom border-5 border-danger w-50 mx-auto text-center">
+                        <h1>
+                            Currency <span class="text-danger">
+                                Converter
+                            </span>
+                        </h1>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="convertAmount" id="convertAmountLabel">Amount to Convert:</label>
+                            <input class="form-control" type="number" name="userAmount" id="convertAmount"
+                                placeholder="Amount to be Converted" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="amountConverted" id="convertAmountLabel">Converted Amount:</label>
+                            <input readonly class="form-control" type="number" name="amountConverted"
+                                id="amountConverted" placeholder="Converted Amount to be Displayed" required>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="input-group mb-4">
+                                    <label class="input-group-text" for="inputGroupSelect01">From</label>
+                                    <select class="form-select" id="inputGroupSelect01" required>
+                                        <option selected>Choose...</option>
+                                        <option value="USD">USD</option>
+                                        <option value="INR">INR</option>
+                                        <option value="CAD">CAD</option>
+                                        <option value="BDT">BDT</option>
+                                        <option value="AUD">AUD</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group mb-4">
+                                    <label class="input-group-text" for="inputGroupSelect02">To</label>
+                                    <select class="form-select" id="inputGroupSelect02" required>
+                                        <option selected>Choose...</option>
+                                        <option value="USD">USD</option>
+                                        <option value="INR">INR</option>
+                                        <option value="CAD">CAD</option>
+                                        <option value="BDT">BDT</option>
+                                        <option value="AUD">AUD</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="currencyButton">
+                                    <input id="btn_currency" class="btn btn-lg btn-primary w-100" type="button"
+                                        value="Convert" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="resetButton">
+                                    <input id="btn_reset" class="btn btn-lg btn-primary w-100" type="reset"
+                                        value="Reset" />
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
