@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
         try {
             if (fromSelectedCurrency == "USD" && toSectedCurrency == "INR") {
                 displayAmount.value = userAmount * 83.03;
+            } else if (fromSelectedCurrency == "USD" && toSectedCurrency == "USD") {
+                displayAmount.value = userAmount * 1;
             } else if (fromSelectedCurrency == "USD" && toSectedCurrency == "CAD") {
                 displayAmount.value = userAmount * 1.35;
             } else if (fromSelectedCurrency == "USD" && toSectedCurrency == "AUD") {
@@ -29,6 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 displayAmount.value = userAmount * 0.018;
             } else if (fromSelectedCurrency == "INR" && toSectedCurrency == "BDT") {
                 displayAmount.value = userAmount * 1.32;
+            } else if (fromSelectedCurrency == "INR" && toSectedCurrency == "INR") {
+                displayAmount.value = userAmount * 1;
             } else if (fromSelectedCurrency == "CAD" && toSectedCurrency == "USD") {
                 displayAmount.value = userAmount * 0.74;
             } else if (fromSelectedCurrency == "CAD" && toSectedCurrency == "INR") {
@@ -37,6 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 displayAmount.value = userAmount * 1.12;
             } else if (fromSelectedCurrency == "CAD" && toSectedCurrency == "BDT") {
                 displayAmount.value = userAmount * 81.12;
+            } else if (fromSelectedCurrency == "CAD" && toSectedCurrency == "CAD") {
+                displayAmount.value = userAmount * 1;
             } else if (fromSelectedCurrency == "AUD" && toSectedCurrency == "USD") {
                 displayAmount.value = userAmount * 0.66;
             } else if (fromSelectedCurrency == "AUD" && toSectedCurrency == "INR") {
@@ -45,6 +51,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 displayAmount.value = userAmount * 0.89;
             } else if (fromSelectedCurrency == "AUD" && toSectedCurrency == "BDT") {
                 displayAmount.value = userAmount * 72.24;
+            } else if (fromSelectedCurrency == "AUD" && toSectedCurrency == "AUD") {
+                displayAmount.value = userAmount * 1;
             } else if (fromSelectedCurrency == "BDT" && toSectedCurrency == "USD") {
                 displayAmount.value = userAmount * 0.0091;
             } else if (fromSelectedCurrency == "BDT" && toSectedCurrency == "INR") {
@@ -53,6 +61,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 displayAmount.value = userAmount * 0.012;
             } else if (fromSelectedCurrency == "BDT" && toSectedCurrency == "AUD") {
                 displayAmount.value = userAmount * 0.014;
+            } else {
+                displayAmount.value = userAmount * 1;
             }
         } catch (error) {
             console.error(error);
